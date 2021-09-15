@@ -1,0 +1,317 @@
+/* flex布局  盒子布局*/
+.lee-flex {
+	display: flex;
+}
+
+.lee-flex-column {
+	flex-direction: column !important;
+}
+
+.lee-flex-row {
+	flex-direction: row !important;;
+}
+
+.lee-justify-content-center {
+	justify-content: center !important;;
+}
+.lee-justify-content-start {
+	justify-content: flex-start !important;;
+}
+.lee-justify-content-end {
+	justify-content: flex-end !important;;
+}
+
+.lee-justify-content-between {
+	justify-content: space-between !important;;
+}
+
+.lee-align-items-center {
+	align-items: center;
+}
+
+.lee-align-items-start {
+	align-items: flex-start;
+}
+
+.lee-align-items-end {
+	align-items: flex-end;
+}
+
+.lee-text-align-center {
+	text-align: center;
+}
+.lee-text-align-left {
+	text-align: left;
+}
+.lee-text-align-right {
+	text-align: right;
+}
+
+.lee-flex-1 {
+	flex: 1;
+}
+
+.lee-flex-none {
+	flex: none;
+}
+
+.lee-position-relative {
+	position: relative;
+}
+
+.lee-position-absolute {
+	position: absolute;
+}
+
+.lee-position-fixed {
+	position: fixed;
+}
+/* 滚动条 */
+.lee-overflow-hidden{
+	overflow: hidden;
+}
+.lee-overflow-scroll{
+	overflow: scroll;
+}
+.lee-overflow-y-scroll{
+	overflow-y: scroll;
+}
+.lee-overflow-x-scroll{
+	overflow-x: scroll;
+}
+.lee-overflow-y-hidden{
+	overflow-y: hidden;
+}
+.lee-overflow-x-hidden{
+	overflow-x: hidden;
+}
+
+/* 字体样式 */
+.lee-text-overflow-ellipsis{
+	white-space:nowrap; 
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.lee-color-black {
+	color: #000000;
+}
+.lee-color-gray {
+	color: #999999;
+}
+.lee-color-green{
+	color: #52CCC2;
+}
+.lee-color-red {
+	color: #f05c4f;
+}
+.lee-color-yellow {
+	color: #FF921A;
+}
+.lee-color-blue {
+	color: #007aff;
+}
+.lee-color-blue-a {
+	color: #092757;
+}
+
+
+.lee-font-size-25 {
+	font-size: 25rpx;
+}
+
+.lee-font-size-20 {
+	font-size: 20rpx;
+}
+.lee-font-size-30 {
+	font-size: 30rpx;
+}
+
+.lee-font-size-35 {
+	font-size: 35rpx;
+}
+.lee-font-size-40 {
+	font-size: 40rpx;
+}
+
+.lee-font-weight-100 {
+	font-weight: 100;
+}
+
+.lee-font-weight-300 {
+	font-weight: 300;
+}
+
+.lee-font-weight-500 {
+	font-weight: 500;
+}
+.lee-font-weight-600 {
+	font-weight: 600;
+}
+
+.lee-font-weight-700 {
+	font-weight: 700;
+}
+
+.lee-font-weight-900 {
+	font-weight: 900;
+}
+
+/* 背景颜色 */
+.lee-bgc-white {
+	background-color: white;
+}
+.lee-bgc-gray{
+	background-color: #F9FAFE;
+}
+/* app页面全屏背景色,无缝衔接 */
+/* 使用会导致层级问题，发生时请调整页面的层级 */
+.lee-page-bgc-gray{
+	min-height: 100vh;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	background-color: #F9FAFE;
+}
+
+/* 边框样式 */
+.lee-border-black {
+	border: solid 1px #000000;
+}
+.lee-border-gray{
+	border-bottom: solid 1px #f2f3f5;
+}
+/* 阴影样式 */
+.lee-box-shadow-gray-10 {
+	box-shadow: 0 0 10rpx 5rpx #e1e1e1;
+}
+/* 下阴影 */
+.lee-box-shadow-gray-20-bottom{
+	box-shadow: 0px 10rpx 20rpx -10rpx #dddddd;
+}
+
+/* 内边距 */
+.lee-padding-10 {
+	padding: 10upx;
+}
+
+.lee-padding-30 {
+	padding: 30upx;
+}
+
+.lee-padding-top-10 {
+	padding-top: 10upx;
+}
+.lee-padding-top-20 {
+	padding-top: 20upx;
+}
+.lee-padding-top-50 {
+	padding-top: 50upx;
+}
+
+.lee-padding-bottom-10 {
+	padding-bottom: 10upx;
+}
+.lee-padding-bottom-20 {
+	padding-bottom: 20upx;
+}
+.lee-padding-bottom-180 {
+	padding-bottom: 180upx;
+}
+
+.lee-padding-left-10 {
+	padding-left: 10upx;
+}
+
+.lee-padding-right-10 {
+	padding-right: 10upx;
+}
+.lee-padding-right-20{
+	padding-right: 20rpx;
+}
+
+.lee-padding-tb-10 {
+	padding: 10upx 0;
+}
+.lee-padding-tb-20 {
+	padding: 20upx 0;
+}
+.lee-padding-tb-30 {
+	padding: 30upx 0;
+}
+.lee-padding-tb-40 {
+	padding: 40upx 0;
+}
+
+.lee-padding-lr-10 {
+	padding: 0 10upx;
+}
+.lee-padding-lr-20 {
+	padding: 0 20upx;
+}
+.lee-padding-lr-30 {
+	padding: 0 30upx;
+}
+
+/* 外边距 */
+.lee-margin-10 {
+	margin: 10upx;
+}
+.lee-margin-30 {
+	margin: 30upx;
+}
+
+.lee-margin-top-10 {
+	margin-top: 10upx;
+}
+
+.lee-margin-bottom-10 {
+	margin-bottom: 10upx;
+}
+.lee-margin-bottom-180 {
+	margin-bottom: 180upx;
+}
+
+.lee-margin-left-10 {
+	margin-left: 10upx;
+}
+.lee-margin-left-20 {
+	margin-left: 20upx;
+}
+.lee-margin-left-30 {
+	margin-left: 30upx;
+}
+
+.lee-margin-right-10 {
+	margin-right: 10upx;
+}
+.lee-margin-right-20 {
+	margin-right: 20upx;
+}
+.lee-margin-right-30 {
+	margin-right: 30upx;
+}
+
+.lee-margin-tb-10 {
+	margin: 10upx 0;
+}
+
+.lee-margin-lr-10 {
+	margin: 0 10upx;
+}
+/* 鼠标样式 */
+.lee-mouse-wait{
+	cursor:wait
+}
+.lee-mouse-pointer{
+	cursor:pointer
+}
+/* 圆形图片 */
+.lee-image-radius-md{
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	box-shadow: 0 0 20rpx 10rpx #e1e1e1;
+}

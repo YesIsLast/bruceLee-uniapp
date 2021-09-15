@@ -1,0 +1,336 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/uni-app-demo/index/index",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"backgroundColor": "#efefef",
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}, {
+			"path": "pages/uni-app-demo/my/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}
+		// 烟草地图
+		, {
+			"path": "pages/uni-app-demo/smoke/map/index",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"titleNView": false,
+					// "titleNView": {
+					// 	"titleText": "烟草地图",
+					// 	"backgroundColor": "#333333",
+					// 	"titleColor": "#FFFFFF"
+					// },
+					"animationType": "fade-in",
+					"animationDuration": 300,
+					"subNVues": [{
+						"id": "mapPopup", // 唯一标识  
+						"path": "pages/uni-app-demo/smoke/map/subNvue/mapPopup" // 页面路径  
+					}, {
+						"id": "mapRoad_info", // 唯一标识  
+						"path": "pages/uni-app-demo/smoke/map/subNvue/road_info" // 页面路径
+					}]
+				}
+			}
+		},
+
+		// 汇星工作台路由
+		// 首页
+		{
+			"path": "pages/huixing-work/pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 首页
+		{
+			"path": "pages/huixing-work/pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 工作台
+		{
+			"path": "pages/huixing-work/pages/workbench/workbench",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 我的
+		{
+			"path": "pages/huixing-work/pages/mine/mine",
+			"style": {
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 考勤打卡
+		{
+			"path": "pages/huixing-work/pages/attendance/attendance",
+			"style": {
+				"navigationBarTitleText": "考勤打卡",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 考勤统计
+		{
+			"path": "pages/huixing-work/pages/attendance/statistical",
+			"style": {
+				"navigationBarTitleText": "考勤统计",
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 月考勤统计
+		{
+			"path": "pages/huixing-work/pages/attendance/statistical_month",
+			"style": {
+				"navigationBarTitleText": "通知详情",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 我的信息
+		{
+			"path": "pages/huixing-work/pages/mine/mine_information",
+			"style": {
+				"navigationBarTitleText": "我的信息",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 证件信息
+		{
+			"path": "pages/huixing-work/pages/certificate/certificate",
+			"style": {
+				"navigationBarTitleText": "证件信息",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 工作日志-详情
+		{
+			"path": "pages/huixing-work/pages/workLog/workLog_detail",
+			"style": {
+				"navigationBarTitleText": "工作日志",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "总览",
+							"color": "#007aff",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					},
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 工作日志-添加
+		{
+			"path": "pages/huixing-work/pages/workLog/workLog_write",
+			"style": {
+				"navigationBarTitleText": "工作日志",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 车辆维修-列表
+		{
+			"path": "pages/huixing-work/pages/maintenance/maintenance-list",
+			"style": {
+				"navigationBarTitleText": "维修列表",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "添加",
+							"color": "#007aff",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					},
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 车辆维修-添加
+		{
+			"path": "pages/huixing-work/pages/maintenance/maintenance-add",
+			"style": {
+				"navigationBarTitleText": "添加维修",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 车辆维修-详情
+		{
+			"path": "pages/huixing-work/pages/maintenance/maintenance-detail",
+			"style": {
+				"navigationBarTitleText": "维修详情",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 配件申请-添加
+		{
+			"path": "pages/huixing-work/pages/maintenance/accessories/add",
+			"style": {
+				"navigationBarTitleText": "申请配件",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 配件申请-添加
+		{
+			"path": "pages/huixing-work/pages/maintenance/accessories/detail",
+			"style": {
+				"navigationBarTitleText": "配件查看",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 车辆加油-添加
+		{
+			"path": "pages/huixing-work/pages/gas/gas",
+			"style": {
+				"navigationBarTitleText": "加油",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 借款申请-添加
+		{
+			"path": "pages/huixing-work/pages/borrowing/borrowing-add",
+			"style": {
+				"navigationBarTitleText": "借款申请",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "列表",
+							"color": "#007aff",
+							"fontSize": "16px",
+							"width": "60px"
+						}]
+					},
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 借款申请-列表
+		{
+			"path": "pages/huixing-work/pages/borrowing/borrowing-list",
+			"style": {
+				"navigationBarTitleText": "借款列表",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		},
+		// 外派-列表
+		{
+			"path": "pages/huixing-work/pages/assigning/assigning-list",
+			"style": {
+				"navigationBarTitleText": "外派列表",
+				"app-plus": {
+					"titleNView": true,
+					"animationType": "fade-in",
+					"animationDuration": 300
+				}
+			}
+		}
+	],
+	// 原生底部导航栏
+	// "tabBar": {
+	//     "color": "#7A7E83",
+	//     "selectedColor": "#3cc51f",
+	//     "borderStyle": "black",
+	//     "backgroundColor": "#ffffff",
+	//     "list": [{
+	//         "pagePath": "pages/uni-app-demo/index/index",
+	//         "text": "首页"
+	//     }, {
+	//         "pagePath": "pages/huixing-work/pages/index/index",
+	//         "text": "在开发"
+	//     }, {
+	//         "pagePath": "pages/uni-app-demo/my/index",
+	//         "text": "我的"
+	//     }]
+	// },
+	"globalStyle": {
+		// https://uniapp.dcloud.io/collocation/pages?id=%e9%85%8d%e7%bd%ae%e9%a1%b9%e5%88%97%e8%a1%a8
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app-demo",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F7F7F7"
+	},
+	// easycom的具体使用方式 https://uniapp.dcloud.io/collocation/pages?id=easycom
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	}
+}

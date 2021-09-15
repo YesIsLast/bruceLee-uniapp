@@ -1,0 +1,18 @@
+<template>
+	<div class="road_info-main">
+		
+	</div>
+</template>
+
+<script>
+	export default {
+
+	}
+</script>
+
+<style>
+	.road_info-main {
+		background-color: #0f75fa;
+		border-radius: 10px;
+	}
+</style>
