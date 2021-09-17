@@ -1,11 +1,12 @@
 <template>
 	<div class="mapPopup-main">
-		<div style="width: 100%; flex-direction: row; justify-content: flex-end;">
+		<!-- <div style="width: 100%; flex-direction: row; justify-content: flex-end;">
 			<div class="overviewBtn">
 				<text>全览</text>
 			</div>
-		</div>
+		</div> -->
 		<div class="mapPopup-main-content">
+			<text>推推出推出推出推出推出推出推出出</text>
 		</div>
 	</div>
 </template>
@@ -27,7 +28,8 @@
 		height: 130px;
 		background-color: #d4d4d4;
 		border-radius: 10px;
-		bottom: -30px;
+		padding: 10px;
+		/* bottom: -30px; */
 	}
 
 	.overviewBtn {

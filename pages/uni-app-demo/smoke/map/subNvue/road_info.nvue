@@ -1,7 +1,27 @@
 <template>
-	<div class="road_info-main">
-		
-	</div>
+	<view class="road-info-main">
+		<view class="road-direction">
+			<text class="lee-color-write">方向</text>
+		</view>
+		<view class="road-data">
+			<view class="road-distance">
+				<view class="road-distance-num">
+					<text class="lee-color-write lee-font-size-23">300</text>
+				</view>
+				<view class="road-distance-numText">
+					<text class="lee-color-write lee-font-size-16">米</text>
+					<text class="road-color-gray lee-font-size-16 road-margin-left-10">进入</text>
+				</view>
+			</view>
+			<view class="road-name">
+				<text class="road-nameText">前进大前进大街前进大街前进大街街</text>
+			</view>
+		</view>
+		<view class="road-wifi">
+			<text class="lee-color-red lee-font-size-12">卫星信号弱</text>
+			<text class="lee-color-red iconfont iconxinhao3"></text>
+		</view>
+	</view>
 </template>
 
 <script>
@@ -11,8 +31,92 @@
 </script>
 
 <style>
-	.road_info-main {
-		background-color: #0f75fa;
+	.lee-color-write {
+		color: #FFFFFF;
+	}
+
+	.lee-color-red {
+		color: #da3737;
+	}
+
+	.lee-font-size-12 {
+		font-size: 12px;
+	}
+
+	.lee-font-size-16 {
+		font-size: 16px
+	}
+
+	.lee-font-size-23 {
+		font-size: 23px
+	}
+
+	.road-color-gray {
+		color: #9499A5 !important;
+	}
+
+	.road-margin-left-10 {
+		margin-left: 10rpx;
+	}
+
+	.road-info-main {
+		background-color: #e7e7e7;
+		/* opacity: .9; */
 		border-radius: 10px;
+		height: 100px;
+		padding: 10px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.road-direction {
+		width: 50px;
+		height: 80px;
+		text-align: center;
+		background-color: #007AFF;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.road-data {
+		flex: 1;
+		flex-direction: column;
+		background-color: #18B566;
+		height: 80px;
+		justify-content: center;
+	}
+
+	.road-distance {
+		flex-direction: row;
+		align-items: flex-end;
+		background-color: #2B85E4;
+	}
+
+	.road-distance-num {
+		margin-right: 5px;
+		bottom: -5px;
+	}
+
+	.road-distance-numText {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.road-name {
+		margin-top: 5px;
+		background-color: #52CCC2;
+		width: 200px;
+		height: 20px;
+	}
+	.road-nameText{
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.road-wifi {
+		position: absolute;
+		top: 5px;
+		right: 5px;
 	}
 </style>

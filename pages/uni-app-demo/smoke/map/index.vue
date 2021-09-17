@@ -34,7 +34,7 @@
 						background: "transparent",
 						left: '15px',
 						right: '15px',
-						height: '130px',
+						height: '100px',
 					})
 				});
 			},
@@ -51,7 +51,7 @@
 						// backgroundColor: "#ffffff",
 						left: '15px',
 						right: '15px',
-						height: '200px',
+						height: '130px',
 					})
 				});
 			}
